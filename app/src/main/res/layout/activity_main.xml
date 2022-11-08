@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.apptransportesaudecrz.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/relativeLayout">
+
+
+        <ImageView
+            android:id="@+id/imgPrefeitura"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/img_logo_prefeitura"
+            android:layout_alignParentTop="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.666">
+
+
+        <ImageButton
+            android:id="@+id/btnLoginMotorista"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/btn_motorista_vfz"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.698">
+
+
+
+
+        <ImageButton
+            style="@style/styleImageButton"
+            android:id="@+id/btnSolicitacao"
+
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/btn_solicita_transporte_vfz"
+             />
+
+
+        <ImageButton
+            style="@style/styleImageButton"
+            android:id="@+id/btnOuvidoria"
+
+            app:srcCompat="@drawable/btn_ouvidoria_vfz"
+            android:layout_below="@+id/btnSolicitacao"
+
+            android:layout_marginTop="21dp" />
+
+
+        <ImageButton
+            style="@style/styleImageButton"
+            android:id="@+id/btnAvaliacao"
+
+            app:srcCompat="@drawable/btn_avaliacao_vfz"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="24dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

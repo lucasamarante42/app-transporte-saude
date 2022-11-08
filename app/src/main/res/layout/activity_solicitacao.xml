@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.apptransportesaudecrz.SolicitacaoActivity">
+
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="520dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229">
+
+        <EditText
+            style="@style/styleEditText"
+            android:id="@+id/edCpf"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="INSIRA AQUI SEU CPF"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            style="@style/styleCheckbox"
+            android:id="@+id/cbSalvarCpf"
+            android:text="CLIQUE AQUI PARA SALVAR O SEU CPF"
+            android:layout_below="@+id/edCpf"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            style="@style/styleFont"
+            android:id="@+id/tv1"
+            android:text="SELECIONE A DATA DO AGENDAMENTO:"
+            android:layout_below="@+id/cbSalvarCpf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spDia"
+            android:layout_below="@+id/tv1"
+             />
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spMes"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spAno"
+            android:layout_below="@+id/tv1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            style="@style/styleFont"
+            android:id="@+id/tv2"
+            android:text="SELECIONE A HORA DO AGENDAMENTO:"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/spDia"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1" />
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spHora"
+            android:layout_below="@+id/tv2"
+            android:layout_alignLeft="@+id/edCpf"
+            android:layout_alignStart="@+id/edCpf" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spMinuto"
+            android:layout_below="@+id/tv2"
+            android:layout_alignRight="@+id/btnEnviarSolicitacao"
+            android:layout_alignEnd="@+id/btnEnviarSolicitacao" />
+
+
+        <CheckBox
+            style="@style/styleCheckbox"
+            android:id="@+id/cbAcompanhante"
+            android:text="CLIQUE AQUI SE PRECISA ACOMPANHANTE"
+            android:layout_above="@+id/cbResponsavel"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            style="@style/styleCheckbox"
+            android:id="@+id/cbResponsavel"
+            android:text="CONFIRMO TODAS ESSAS INFORMAÇÕES"
+            android:layout_marginBottom="23dp"
+            android:layout_above="@+id/btnEnviarSolicitacao"
+            android:layout_alignLeft="@+id/tv1"
+            android:layout_alignStart="@+id/tv1" />
+
+
+
+        <ImageButton
+            style="@style/styleImageButtonOk"
+            android:id="@+id/btnEnviarSolicitacao"
+
+            app:srcCompat="@drawable/btn_enviar_vfz"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

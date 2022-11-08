@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.apptransportesaudecrz.MotoristaActivity">
+
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="520dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229">
+
+        <EditText
+            style="@style/styleEditText"
+            android:id="@+id/edCpfMotorista"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="INSIRA AQUI SEU CPF"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <CheckBox
+            style="@style/styleCheckbox"
+            android:id="@+id/cbSalvarCpfMotorista"
+            android:text="CLIQUE AQUI PARA SALVAR O SEU CPF"
+            android:layout_below="@+id/edCpfMotorista"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            style="@style/styleFont"
+            android:id="@+id/tv1"
+            android:text="SELECIONE A DATA DA KILOMETRAGEM:"
+            android:layout_below="@+id/cbSalvarCpfMotorista"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spDia"
+            android:layout_below="@+id/tv1"
+            />
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spMes"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spAno"
+            android:layout_below="@+id/tv1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            style="@style/styleFont"
+            android:id="@+id/tv2"
+            android:text="SAÍDA:"
+            android:layout_below="@+id/spDia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            style="@style/styleKm"
+            android:id="@+id/edKmSaida"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="251dp"
+            android:layout_below="@+id/tv2"
+            android:layout_alignBottom="@+id/spHoraSaida"
+            android:layout_alignRight="@+id/spDia"
+            android:layout_alignEnd="@+id/spDia"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spHoraSaida"
+            android:layout_below="@+id/tv2"
+            android:layout_alignLeft="@+id/spMes"
+            android:layout_alignStart="@+id/spMes" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spMinutoSaida"
+            android:layout_below="@+id/tv2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            style="@style/styleFont"
+            android:id="@+id/tv3"
+            android:text="CHEGADA:"
+            android:layout_below="@+id/edKmSaida"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            style="@style/styleKm"
+            android:id="@+id/edKmChegada"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="251dp"
+            android:layout_below="@+id/tv3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spHoraChegada"
+            android:layout_below="@+id/tv3"
+            android:layout_alignLeft="@+id/spHoraSaida"
+            android:layout_alignStart="@+id/spHoraSaida" />
+
+
+        <Spinner
+            style="@style/styleSpinnerAgenda"
+            android:id="@+id/spMinutoChegada"
+            android:layout_below="@+id/tv3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <CheckBox
+            style="@style/styleCheckbox"
+            android:id="@+id/cbResponsavelKm"
+            android:text="CONFIRMO TODAS ESSAS INFORMAÇÕES"
+            android:layout_below="@+id/edKmChegada"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_marginTop="8dp" />
+
+
+
+        <ImageButton
+            style="@style/styleImageButtonOk"
+            android:id="@+id/btnEnviarKm"
+            app:srcCompat="@drawable/btn_enviar_vfz"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
